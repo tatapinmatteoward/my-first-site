@@ -1,0 +1,43 @@
+---
+// Navigation component for Quirk Chronicle
+---
+
+<nav class="bg-[#2d3748] text-white shadow-lg">
+  <div class="container mx-auto px-4 py-3">
+    <div class="flex justify-between items-center">
+      <a href="/" class="text-xl md:text-2xl font-bold tracking-tight hover:text-[#ff6b6b] transition-colors duration-200">Quirk Chronicle</a>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex gap-6 lg:gap-8">
+        <a href="/" class="hover:text-[#ff6b6b] transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-[#ff6b6b]">Home</a>
+        <a href="/articles" class="hover:text-[#ff6b6b] transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-[#ff6b6b]">Articles</a>
+        <a href="/videos" class="hover:text-[#ff6b6b] transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-[#ff6b6b]">Videos</a>
+        <a href="/blog" class="hover:text-[#ff6b6b] transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-[#ff6b6b]">Blog</a>
+        <a href="/contact" class="hover:text-[#ff6b6b] transition-colors duration-200 py-1 border-b-2 border-transparent hover:border-[#ff6b6b]">Contact</a>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button 
+          aria-label="Toggle menu"
+          class="text-white focus:outline-none"
+          onclick="this.nextElementSibling.classList.toggle('hidden')"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+        
+        <!-- Mobile Navigation -->
+        <div class="absolute right-4 mt-2 bg-[#2d3748] shadow-xl rounded-lg py-2 hidden w-48 z-10">
+          <a href="/" class="block px-4 py-2 hover:bg-[#ff6b6b] hover:text-[#2d3748] transition-colors duration-200">Home</a>
+          <a href="/articles" class="block px-4 py-2 hover:bg-[#ff6b6b] hover:text-[#2d3748] transition-colors duration-200">Articles</a>
+          <a href="/videos" class="block px-4 py-2 hover:bg-[#ff6b6b] hover:text-[#2d3748] transition-colors duration-200">Videos</a>
+          <a href="/blog" class="block px-4 py-2 hover:bg-[#ff6b6b] hover:text-[#2d3748] transition-colors duration-200">Blog</a>
+          <a href="/contact" class="block px-4 py-2 hover:bg-[#ff6b6b] hover:text-[#2d3748] transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
